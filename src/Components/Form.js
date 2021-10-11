@@ -31,36 +31,43 @@ function Form({ createInfo }) {
     <div className="form-page">
       <form onSubmit={handleSubmit}>
         <input
+          type="text"
           name="firstName"
           placeholder="First Name"
           onChange={handleChange}
           value={info.firstName}
         />
         <input
+          type="text"
           name="lastName"
           placeholder="Last Name"
           onChange={handleChange}
           value={info.lastName}
         />
         <input
+          type="text"
           name="phoneNumber"
           placeholder="Phone Number"
           onChange={handleChange}
           value={info.phoneNumber}
         />
         <input
+          type="text"
           name="superPower"
           placeholder="Superpower"
           onChange={handleChange}
           value={info.superPower}
         />
         <input
+          type="text"
           name="emailAddress"
           placeholder="E-mail Address"
           onChange={handleChange}
           value={info.emailAddress}
         />
-        <button type="submit">Submit</button>
+        <button className="button button2" type="submit">
+          Submit
+        </button>
       </form>
       <SideInfo />
     </div>
