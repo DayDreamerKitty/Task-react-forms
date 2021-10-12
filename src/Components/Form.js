@@ -18,13 +18,13 @@ function Form({ createInfo }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     createInfo(info);
-    setInfo({
-      firstName: "",
-      lastName: "",
-      phoneNumber: "",
-      superPower: "",
-      emailAddress: "",
-    });
+    // setInfo({
+    //   firstName: "",
+    //   lastName: "",
+    //   phoneNumber: "",
+    //   superPower: "",
+    //   emailAddress: "",
+    // });
   };
 
   return (

@@ -9,7 +9,7 @@ function App() {
   const [show, setShow] = useState(false);
 
   const createInfo = (newInfo) => {
-    const id = studentsInfo[studentsInfo.length - 1] + 1;
+    const id = studentsInfo.length + 1;
     const nInfo = { ...newInfo, id: id };
     console.log(nInfo);
     setStudentsInfo([...studentsInfo, nInfo]);
